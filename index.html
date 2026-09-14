@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Polly Graphic Designer — Design, Branding, Printing, Social Media Ads Management, Mobile Photography & Videography in Kampala, Uganda.">
+  <title>Polly Graphic Designer | Design • Brand • Print</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#06050b; --panel:#0e0b18; --gold:#d7b45a; --gold2:#f3d98a;
+      --white:#f8f7f3; --muted:#b9b5c2; --line:rgba(215,180,90,.28);
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--white);font-family:Montserrat,Arial,sans-serif;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(6,5,11,.84);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav-inner{max-width:1150px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:700;color:var(--gold2)}
+    .links{display:flex;gap:25px;font-size:13px;font-weight:600}
+    .links a:hover{color:var(--gold2)}
+    .menu{display:none;background:none;border:0;color:white;font-size:25px}
+    .hero{min-height:100vh;display:grid;place-items:center;padding:120px 22px 70px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 72% 25%,rgba(41,50,130,.42),transparent 35%),radial-gradient(circle at 25% 80%,rgba(111,22,40,.22),transparent 35%);pointer-events:none}
+    .hero-grid{width:min(1150px,100%);display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center;position:relative}
+    .eyebrow{color:var(--gold2);font-size:12px;letter-spacing:4px;font-weight:700;margin-bottom:18px}
+    h1{font-family:"Cormorant Garamond",serif;font-size:clamp(62px,8vw,105px);line-height:.88;margin:0 0 24px;font-weight:600}
+    h1 span{color:var(--gold2)}
+    .lead{max-width:620px;color:#d2ced9;font-size:17px}
+    .cta{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+    .btn{padding:13px 21px;border-radius:999px;border:1px solid var(--gold);font-weight:700;font-size:13px}
+    .btn.primary{background:var(--gold);color:#0b0910}
+    .btn:hover{transform:translateY(-2px)}
+    .hero-card{max-width:440px;margin:auto;border:1px solid var(--line);padding:10px;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.015));box-shadow:0 25px 80px rgba(0,0,0,.5)}
+    .hero-card img{display:block;width:100%;height:auto}
+    section{padding:95px 22px}
+    .wrap{max-width:1150px;margin:auto}
+    .section-kicker{color:var(--gold2);font-size:11px;letter-spacing:3px;font-weight:700}
+    h2{font-family:"Cormorant Garamond",serif;font-size:54px;line-height:1;margin:9px 0 18px}
+    .section-intro{color:var(--muted);max-width:700px}
+    .about{background:linear-gradient(180deg,#08070d,#0c0913)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+    .quote{border-left:2px solid var(--gold);padding:15px 0 15px 24px;font-family:"Cormorant Garamond",serif;font-size:29px;color:#eee}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:35px}
+    .service{padding:28px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.025);min-height:190px}
+    .num{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:2px}
+    .service h3{font-family:"Cormorant Garamond",serif;font-size:30px;margin:18px 0 8px}
+    .service p{color:var(--muted);font-size:13px}
+    .portfolio{background:#05040a}
+    .portfolio-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;margin-top:35px}
+    .work{border:1px solid rgba(255,255,255,.1);overflow:hidden;background:#0c0a12}
+    .work img{width:100%;display:block}
+    .work-caption{padding:16px 18px;font-size:13px;color:#d4d0d8}
+    .contact{background:radial-gradient(circle at 50% 0%,rgba(215,180,90,.12),transparent 35%),#09070d}
+    .contact-box{border:1px solid var(--line);padding:45px;display:grid;grid-template-columns:1fr 1fr;gap:45px}
+    .contact-item{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+    .label{font-size:10px;letter-spacing:2px;color:var(--gold);font-weight:700}
+    .value{font-size:16px;margin-top:5px}
+    footer{padding:28px 22px;border-top:1px solid rgba(255,255,255,.08);color:#9e9aa6;text-align:center;font-size:12px}
+    .socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .social{border:1px solid rgba(255,255,255,.15);padding:8px 12px;border-radius:20px;font-size:11px}
+    @media(max-width:800px){
+      .links{display:none}.menu{display:block}.nav.open .links{display:flex;position:absolute;top:60px;left:0;right:0;background:#09070d;padding:20px;flex-direction:column}
+      .hero-grid,.about-grid,.contact-box,.portfolio-grid{grid-template-columns:1fr}
+      .hero{padding-top:105px}.hero-card{max-width:390px}
+      .services{grid-template-columns:1fr 1fr}
+      h2{font-size:45px}
+    }
+    @media(max-width:520px){.services{grid-template-columns:1fr}.contact-box{padding:28px}.brand{font-size:24px}}
+  </style>
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home">Polly Graphic Designer</a>
+    <button class="menu" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <nav class="links">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">DESIGN • BRAND • PRINT</div>
+      <h1>Ideas made <span>visible.</span></h1>
+      <p class="lead">Creative design, branding, printing and digital content solutions crafted to help businesses look professional, connect with customers and stand out.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/256776483329" target="_blank">Chat on WhatsApp</a>
+        <a class="btn" href="#portfolio">View Work</a>
+      </div>
+    </div>
+    <div class="hero-card"><img src="assets/polly-brand.png" alt="Polly Graphic Designer brand artwork"></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="section-kicker">ABOUT POLLY</div>
+      <h2>Creative work with a professional finish.</h2>
+      <p class="section-intro">Polly Graphic Designer provides creative services for brands, businesses and individuals who want strong visual communication across print and digital platforms.</p>
+      <p class="section-intro">From a single social media post to a complete brand look, every project is approached with attention to detail, consistency and style.</p>
+    </div>
+    <div class="quote">“Your brand deserves to look as good as the work you do.”</div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-kicker">WHAT WE DO</div>
+    <h2>Services</h2>
+    <p class="section-intro">A creative service studio for design, branding, print and digital content.</p>
+    <div class="services">
+      <article class="service"><div class="num">01</div><h3>Graphic Design</h3><p>Posters, flyers, business cards, menus, banners and other custom visual designs.</p></article>
+      <article class="service"><div class="num">02</div><h3>Branding</h3><p>Logo concepts and branded materials that give your business a clear, memorable identity.</p></article>
+      <article class="service"><div class="num">03</div><h3>Printing</h3><p>Professional print-ready artwork for business and promotional materials.</p></article>
+      <article class="service"><div class="num">04</div><h3>Social Media Ads</h3><p>Creative advertising designs and social media ad management to help your message reach customers.</p></article>
+      <article class="service"><div class="num">05</div><h3>Mobile Photo & Video</h3><p>Content captured using mobile photography and videography for brands and social media.</p></article>
+      <article class="service"><div class="num">06</div><h3>Social Media Scheduling</h3><p>Organized content scheduling to help businesses maintain a consistent online presence.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <div class="wrap">
+    <div class="section-kicker">SELECTED WORK</div>
+    <h2>Portfolio</h2>
+    <p class="section-intro">A glimpse of the visual direction and promotional work behind Polly Graphic Designer.</p>
+    <div class="portfolio-grid">
+      <div class="work"><img src="assets/polly-brand.png" alt="Polly Graphic Designer promotional design"><div class="work-caption">Brand & promotional design — Polly Graphic Designer</div></div>
+      <div class="work"><div style="min-height:100%;padding:38px;display:flex;align-items:center"><div><div class="section-kicker">NEXT PROJECT</div><h3 style="font-family:'Cormorant Garamond';font-size:40px;margin:12px 0">Your business could be here.</h3><p style="color:#aaa6b0;font-size:13px">Contact Polly to create a custom design for your brand, campaign or event.</p><a class="btn primary" href="#contact">Start a Project</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-kicker">LET'S WORK TOGETHER</div>
+    <h2>Start your project.</h2>
+    <div class="contact-box">
+      <div>
+        <p class="section-intro">Need a design, brand identity, printed material or social media content? Get in touch and let's discuss your project.</p>
+        <div class="cta"><a class="btn primary" href="https://wa.me/256776483329" target="_blank">WhatsApp Me</a><a class="btn" href="mailto:graphicdesignerpolly@gmail.com">Send Email</a></div>
+      </div>
+      <div>
+        <div class="contact-item"><div class="label">PHONE / WHATSAPP</div><div class="value">+256 776 483329</div></div>
+        <div class="contact-item"><div class="label">EMAIL</div><div class="value">graphicdesignerpolly@gmail.com</div></div>
+        <div class="contact-item"><div class="label">LOCATION</div><div class="value">Kampala, Uganda</div></div>
+        <div class="socials">
+          <a class="social" href="https://www.instagram.com/polly_graphicdesigner/" target="_blank">Instagram</a>
+          <a class="social" href="https://www.tiktok.com/" target="_blank">TikTok</a>
+          <a class="social" href="https://www.youtube.com/" target="_blank">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Polly Graphic Designer. Design • Branding • Printing • Digital Media.</footer>
+</body>
+</html>
