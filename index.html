@@ -55,7 +55,10 @@ img{
   margin:auto;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
 
 header{
   position:sticky;
@@ -98,7 +101,10 @@ nav a:hover{
   color:var(--gold);
 }
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
   padding:100px 0 90px;
@@ -189,7 +195,10 @@ h3{
   display:block;
 }
 
-/* SECTIONS */
+
+/* =========================
+   SECTIONS
+========================= */
 
 section{
   padding:90px 0;
@@ -215,7 +224,10 @@ section{
   padding-left:30px;
 }
 
-/* SERVICES */
+
+/* =========================
+   SERVICES
+========================= */
 
 .services{
   display:grid;
@@ -245,7 +257,10 @@ section{
   font-size:13px;
 }
 
-/* PORTFOLIO */
+
+/* =========================
+   PORTFOLIO
+========================= */
 
 .portfolio{
   border-top:1px solid var(--line);
@@ -278,7 +293,10 @@ section{
   display:block;
 }
 
-/* CONTACT */
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact{
   border-top:1px solid var(--line);
@@ -317,7 +335,10 @@ section{
   color:#08070b;
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
   border-top:1px solid var(--line);
@@ -327,8 +348,674 @@ footer{
   font-size:11px;
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:850px){
 
-  .
+  .nav{
+    flex-direction:column;
+    justify-content:center;
+    padding:15px 0;
+  }
+
+  nav{
+    gap:14px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  nav a{
+    font-size:10px;
+  }
+
+  .hero{
+    padding:70px 0;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  h1{
+    font-size:60px;
+  }
+
+  h2{
+    font-size:42px;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+  .services{
+    grid-template-columns:1fr;
+  }
+
+  .portfolio-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+  }
+
+  .contact-box{
+    padding:30px 20px;
+  }
+
+  .quote{
+    font-size:30px;
+  }
+
+}
+
+
+@media(max-width:500px){
+
+  .wrap{
+    width:90%;
+  }
+
+  .brand{
+    font-size:27px;
+  }
+
+  h1{
+    font-size:52px;
+  }
+
+  h2{
+    font-size:38px;
+  }
+
+  .portfolio-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .social-links{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .social-links a{
+    text-align:center;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <div class="wrap nav">
+
+    <a href="#home" class="brand">
+      Polly Graphic Designer
+    </a>
+
+    <nav>
+
+      <a href="#home">Home</a>
+
+      <a href="#about">About</a>
+
+      <a href="#services">Services</a>
+
+      <a href="#portfolio">Portfolio</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section class="hero" id="home">
+
+  <div class="wrap hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        CREATIVE DESIGN • DIGITAL MEDIA
+      </div>
+
+      <h1>
+        We Create.<br>
+        <span>You Stand Out.</span>
+      </h1>
+
+      <p class="lead">
+        Professional graphic design, branding, printing,
+        social media advertising, mobile photography and
+        videography in Kampala, Uganda.
+      </p>
+
+      <div class="cta">
+
+        <a class="btn primary" href="#portfolio">
+          View Our Work
+        </a>
+
+        <a
+          class="btn"
+          href="https://wa.me/256776483329"
+          target="_blank">
+          WhatsApp Us
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+      <img
+        src="polly%20graphics%20.jpg"
+        alt="Polly Graphic Designer">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+  <div class="wrap about-grid">
+
+    <div>
+
+      <div class="section-kicker">
+        ABOUT POLLY
+      </div>
+
+      <h2>
+        Creative Ideas.<br>
+        Powerful Visuals.
+      </h2>
+
+      <p class="section-intro">
+        Polly Graphic Designer is a creative design and
+        digital media business based in Kampala, Uganda.
+        We help businesses and individuals build strong
+        visual identities and communicate professionally
+        through creative design.
+      </p>
+
+      <p class="section-intro">
+        From branding and printing to social media
+        advertising, mobile photography and videography,
+        we create visuals that help your brand stand out.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <div class="quote">
+        “Good design doesn't just look beautiful —
+        it communicates, connects and makes your brand memorable.”
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+  <div class="wrap">
+
+    <div class="section-kicker">
+      WHAT WE DO
+    </div>
+
+    <h2>
+      Our Services
+    </h2>
+
+    <p class="section-intro">
+      Creative solutions designed to give your brand
+      a professional and memorable appearance.
+    </p>
+
+
+    <div class="services">
+
+
+      <div class="service">
+
+        <div class="num">
+          01
+        </div>
+
+        <h3>
+          Graphic Design
+        </h3>
+
+        <p>
+          Posters, flyers, business cards, banners,
+          social media designs and other professional graphics.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <div class="num">
+          02
+        </div>
+
+        <h3>
+          Branding
+        </h3>
+
+        <p>
+          Logo design, brand identity and visual materials
+          that create a strong and consistent brand.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <div class="num">
+          03
+        </div>
+
+        <h3>
+          Printing
+        </h3>
+
+        <p>
+          Professional print designs for business cards,
+          posters, banners, packaging and promotional materials.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <div class="num">
+          04
+        </div>
+
+        <h3>
+          Social Media Ads
+        </h3>
+
+        <p>
+          Creative advertising designs and social media
+          ad management to help businesses reach more customers.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <div class="num">
+          05
+        </div>
+
+        <h3>
+          Mobile Photography
+        </h3>
+
+        <p>
+          Creative photography using mobile technology for
+          businesses, products, events and social media content.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <div class="num">
+          06
+        </div>
+
+        <h3>
+          Mobile Videography
+        </h3>
+
+        <p>
+          Short-form videos and creative visual content
+          designed for social media and digital marketing.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PORTFOLIO
+========================= -->
+
+<section class="portfolio" id="portfolio">
+
+  <div class="wrap">
+
+    <div class="section-kicker">
+      SELECTED WORK
+    </div>
+
+    <h2>
+      Our Portfolio
+    </h2>
+
+    <p class="section-intro">
+      A selection of creative work designed for different
+      brands, businesses and projects.
+    </p>
+
+
+    <div class="portfolio-grid">
+
+
+      <a
+        class="portfolio-card"
+        href="1.jpg"
+        target="_blank">
+
+        <img
+          src="1.jpg"
+          alt="Polly Graphic Designer Portfolio 1">
+
+      </a>
+
+
+      <a
+        class="portfolio-card"
+        href="2.jpg"
+        target="_blank">
+
+        <img
+          src="2.jpg"
+          alt="Polly Graphic Designer Portfolio 2">
+
+      </a>
+
+
+      <a
+        class="portfolio-card"
+        href="3.jpg"
+        target="_blank">
+
+        <img
+          src="3.jpg"
+          alt="Polly Graphic Designer Portfolio 3">
+
+      </a>
+
+
+      <a
+        class="portfolio-card"
+        href="4.jpg"
+        target="_blank">
+
+        <img
+          src="4.jpg"
+          alt="Polly Graphic Designer Portfolio 4">
+
+      </a>
+
+
+      <a
+        class="portfolio-card"
+        href="5.jpg"
+        target="_blank">
+
+        <img
+          src="5.jpg"
+          alt="Polly Graphic Designer Portfolio 5">
+
+      </a>
+
+
+      <a
+        class="portfolio-card"
+        href="6.jpg"
+        target="_blank">
+
+        <img
+          src="6.jpg"
+          alt="Polly Graphic Designer Portfolio 6">
+
+      </a>
+
+
+      <a
+        class="portfolio-card"
+        href="7.jpg"
+        target="_blank">
+
+        <img
+          src="7.jpg"
+          alt="Polly Graphic Designer Portfolio 7">
+
+      </a>
+
+
+      <a
+        class="portfolio-card"
+        href="8.jpg"
+        target="_blank">
+
+        <img
+          src="8.jpg"
+          alt="Polly Graphic Designer Portfolio 8">
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+  <div class="wrap">
+
+    <div class="section-kicker">
+      LET'S WORK TOGETHER
+    </div>
+
+    <h2>
+      Have a Project in Mind?
+    </h2>
+
+    <p
+      class="section-intro"
+      style="margin:auto;">
+
+      Let's create something professional,
+      unique and memorable for your brand.
+
+    </p>
+
+
+    <div class="contact-box">
+
+
+      <h3>
+        Polly Graphic Designer
+      </h3>
+
+
+      <p>
+        Kampala, Uganda
+      </p>
+
+
+      <p>
+        <strong>Phone / WhatsApp:</strong>
+        +256 776 483329
+      </p>
+
+
+      <p>
+        <strong>Email:</strong>
+        graphicdesignerpolly@gmail.com
+      </p>
+
+
+      <div
+        class="cta"
+        style="justify-content:center;">
+
+
+        <a
+          class="btn primary"
+          href="https://wa.me/256776483329"
+          target="_blank">
+
+          WhatsApp
+
+        </a>
+
+
+        <a
+          class="btn"
+          href="mailto:graphicdesignerpolly@gmail.com">
+
+          Email Us
+
+        </a>
+
+
+      </div>
+
+
+      <!-- SOCIAL MEDIA -->
+
+      <div class="social-links">
+
+
+        <a
+          href="https://www.tiktok.com/@polly_graphicdesigner"
+          target="_blank">
+
+          TikTok @polly_graphicdesigner
+
+        </a>
+
+
+        <a
+          href="https://www.tiktok.com/@polly.graphic.des"
+          target="_blank">
+
+          TikTok @polly.graphic.des
+
+        </a>
+
+
+        <a
+          href="https://snapchat.com/t/SWZ2J43A"
+          target="_blank">
+
+          Snapchat
+
+        </a>
+
+
+        <a
+          href="https://snapchat.com/t/MQLAwofw"
+          target="_blank">
+
+          Snapchat 2
+
+        </a>
+
+
+        <a
+          href="https://www.youtube.com/@PollyGraphicdesigner"
+          target="_blank">
+
+          YouTube
+
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="wrap">
+
+    © 2026 Polly Graphic Designer.
+    All Rights Reserved.
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
