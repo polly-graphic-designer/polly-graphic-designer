@@ -1,201 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Polly Graphic Designer — Design, Branding, Printing, Social Media Ads Management, Mobile Photography & Videography in Kampala, Uganda.">
-  <title>Polly Graphic Designer | Design • Brand • Print</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      .social-icons {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  margin-top: 20px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Polly Graphic Designer — Design, Branding, Printing, Social Media Ads Management, Mobile Photography & Videography in Kampala, Uganda.">
+
+<title>Polly Graphic Designer | Design • Brand • Print</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --bg:#08070b;
+  --card:#0f0d14;
+  --gold:#d7b45a;
+  --gold-light:#f0d98a;
+  --text:#f5f1e8;
+  --muted:#aaa6b0;
+  --line:rgba(255,255,255,.10);
 }
 
-.social-icons a {
-  width: 42px;
-  height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(215,180,90,.45);
-  border-radius: 50%;
-  color: #d7b45a;
-  transition: .3s;
+*{
+  box-sizing:border-box;
 }
 
-.social-icons svg {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-  stroke: currentColor;
-  stroke-width: 1;
+html{
+  scroll-behavior:smooth;
 }
 
-.social-icons a:hover {
-  background: #d7b45a;
-  color: #0b0910;
-  transform: translateY(-4px);
-}
-    }
-    @media(max-width:520px){.services{grid-template-columns:1fr}.contact-box{padding:28px}.brand{font-size:24px}}
-  </style>
-</head>
-<body>
-body {
-  margin: 0;
-  background: #08070b;
-  color: #f5f1e8;
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Montserrat',sans-serif;
+  line-height:1.6;
 }
 
-<main>
-<section class="hero" id="home">
-  <div class="hero-grid">
-    <div>
-      <div class="eyebrow">DESIGN • BRAND • PRINT</div>
-      <h1>Ideas made <span>visible.</span></h1>
-      <p class="lead">Creative design, branding, printing and digital content solutions crafted to help businesses look professional, connect with customers and stand out.</p>
-      <div class="cta">
-        <a class="btn primary" href="https://wa.me/256776483329" target="_blank">Chat on WhatsApp</a>
-        <a class="btn" href="#portfolio">View Work</a>
-      </div>
-    </div>
-    <div class="hero-card"><img src="assets/polly-brand.png" alt="Polly Graphic Designer brand artwork"></div>
-  </div>
-</section>
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
-<section class="about" id="about">
-  <div class="wrap about-grid">
-    <div>
-      <div class="section-kicker">ABOUT POLLY</div>
-      <h2>Creative work with a professional finish.</h2>
-      <p class="section-intro">Polly Graphic Designer provides creative services for brands, businesses and individuals who want strong visual communication across print and digital platforms.</p>
-      <p class="section-intro">From a single social media post to a complete brand look, every project is approached with attention to detail, consistency and style.</p>
-    </div>
-    <div class="quote">“Your brand deserves to look as good as the work you do.”</div>
-  </div>
-</section>
+img{
+  max-width:100%;
+}
 
-<section id="services">
-  <div class="wrap">
-    <div class="section-kicker">WHAT WE DO</div>
-    <h2>Services</h2>
-    <p class="section-intro">A creative service studio for design, branding, print and digital content.</p>
-    <div class="services">
-      <article class="service"><div class="num">01</div><h3>Graphic Design</h3><p>Posters, flyers, business cards, menus, banners and other custom visual designs.</p></article>
-      <article class="service"><div class="num">02</div><h3>Branding</h3><p>Logo concepts and branded materials that give your business a clear, memorable identity.</p></article>
-      <article class="service"><div class="num">03</div><h3>Printing</h3><p>Professional print-ready artwork for business and promotional materials.</p></article>
-      <article class="service"><div class="num">04</div><h3>Social Media Ads</h3><p>Creative advertising designs and social media ad management to help your message reach customers.</p></article>
-      <article class="service"><div class="num">05</div><h3>Mobile Photo & Video</h3><p>Content captured using mobile photography and videography for brands and social media.</p></article>
-      <article class="service"><div class="num">06</div><h3>Social Media Scheduling</h3><p>Organized content scheduling to help businesses maintain a consistent online presence.</p></article>
-    </div>
-  </div>
-</section>
+.wrap{
+  width:min(1120px,92%);
+  margin:auto;
+}
 
-<section class="portfolio" id="portfolio">
-  <div class="wrap">
-    <div class="section-kicker">SELECTED WORK</div>
-    <h2>Portfolio</h2>
-    <p class="section-intro">A glimpse of the visual direction and promotional work behind Polly Graphic Designer.</p>
-    <div class="portfolio-grid">
-     <section class="portfolio" id="portfolio">
-  <div class="wrap">
+/* HEADER */
 
-    <div class="section-kicker">MY WORK</div>
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(8,7,11,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
 
-    <h2>Portfolio</h2>
+.nav{
+  min-height:75px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
 
-    <p class="section-intro">
-      Explore some of my latest creative work.
-    </p>
+.brand{
+  font-family:'Cormorant Garamond',serif;
+  font-size:30px;
+  font-weight:700;
+  color:var(--gold);
+}
 
-    <div class="portfolio-grid">
+nav{
+  display:flex;
+  gap:22px;
+  align-items:center;
+}
 
-      <a class="portfolio-card" href="1.jpg" target="_blank">
-        <img src="1.jpg" alt="Polly Graphic Designer Work 1">
-      </a>
+nav a{
+  font-size:12px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:#ddd8df;
+}
 
-      <a class="portfolio-card" href="2.jpg" target="_blank">
-        <img src="2.jpg" alt="Polly Graphic Designer Work 2">
-      </a>
+nav a:hover{
+  color:var(--gold);
+}
 
-      <a class="portfolio-card" href="3.jpg" target="_blank">
-        <img src="3.jpg" alt="Polly Graphic Designer Work 3">
-      </a>
+/* HERO */
 
-      <a class="portfolio-card" href="4.jpg" target="_blank">
-        <img src="4.jpg" alt="Polly Graphic Designer Work 4">
-      </a>
+.hero{
+  padding:100px 0 90px;
+}
 
-      <a class="portfolio-card" href="5.jpg" target="_blank">
-        <img src="5.jpg" alt="Polly Graphic Designer Work 5">
-      </a>
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+}
 
-      <a class="portfolio-card" href="6.jpg" target="_blank">
-        <img src="6.jpg" alt="Polly Graphic Designer Work 6">
-      </a>
+.eyebrow,
+.section-kicker{
+  color:var(--gold);
+  font-size:11px;
+  letter-spacing:3px;
+  font-weight:600;
+}
 
-      <a class="portfolio-card" href="7.jpg" target="_blank">
-        <img src="7.jpg" alt="Polly Graphic Designer Work 7">
-      </a>
+h1,
+h2,
+h3{
+  font-family:'Cormorant Garamond',serif;
+}
 
-      <a class="portfolio-card" href="8.jpg" target="_blank">
-        <img src="8.jpg" alt="Polly Graphic Designer Work 8">
-      </a>
+h1{
+  font-size:clamp(55px,8vw,90px);
+  line-height:.9;
+  margin:18px 0 25px;
+}
 
-    </div>
-  </div>
-</section>
-  </div>
-</section>
+h1 span{
+  color:var(--gold);
+}
 
-<section class="contact" id="contact">
-  <div class="wrap">
-    <div class="section-kicker">LET'S WORK TOGETHER</div>
-    <h2>Start your project.</h2>
-  <div class="social-icons">
+h2{
+  font-size:52px;
+  line-height:1;
+  margin:12px 0 20px;
+}
 
-  <!-- Instagram -->
-  <a href="#" target="_blank" aria-label="Instagram" title="Instagram">
-    <svg viewBox="0 0 24 24">
-      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-      <circle cx="12" cy="12" r="4"></circle>
-      <circle cx="17.5" cy="6.5" r="1"></circle>
-    </svg>
-  </a>
+h3{
+  font-size:25px;
+}
 
-  <!-- TikTok -->
-  <a href="https://www.tiktok.com/@polly_graphicdesigner" target="_blank" aria-label="TikTok">
-    <svg viewBox="0 0 24 24">
-      <path d="M16 3c.3 2.1 1.5 3.5 4 3.8v3.2c-1.5 0-2.8-.4-4-1.1v6.2c0 4-2.7 6-6 6-3 0-5-2.2-5-5 0-3.3 2.8-5.4 6.2-5.1v3.3c-1.6-.3-3 .5-3 1.9 0 1.1.8 1.8 1.8 1.8 1.2 0 2-.8 2-2.3V3h4z"></path>
-    </svg>
-  </a>
+.lead,
+.section-intro{
+  color:var(--muted);
+  font-size:15px;
+  max-width:700px;
+}
 
-  <!-- Snapchat -->
-  <a href="https://snapchat.com/t/SWZ2J43A" target="_blank" aria-label="Snapchat">
-    <svg viewBox="0 0 24 24">
-      <path d="M12 2c-4 0-6.5 2.7-6.5 6.3v3.2c0 .8-.5 1.4-1.3 1.7l-1.2.4c-.5.2-.5.9 0 1.1l2 .7c.4.2.7.5.8 1 .2.9.7 1.3 1.6 1.3.8 0 1.3-.3 1.8-.5.7.9 1.7 1.5 2.8 1.7v1.4h2v-1.4c1.1-.2 2.1-.8 2.8-1.7.5.2 1 .5 1.8.5.9 0 1.4-.4 1.6-1.3.1-.5.4-.8.8-1l2-.7c.5-.2.5-.9 0-1.1l-1.2-.4c-.8-.3-1.3-.9-1.3-1.7V8.3C18.5 4.7 16 2 12 2z"></path>
-    </svg>
-  </a>
+.cta{
+  display:flex;
+  gap:12px;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
 
-  <!-- YouTube -->
-  <a href="https://www.youtube.com/@PollyGraphicdesigner" target="_blank" aria-label="YouTube">
-    <svg viewBox="0 0 24 24">
-      <path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"></path>
-    </svg>
-  </a>
+.btn{
+  display:inline-block;
+  padding:13px 22px;
+  border:1px solid rgba(215,180,90,.5);
+  font-size:12px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
 
-  <!-- WhatsApp -->
-  <a href="https://wa.me/256776483329" target="_blank" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24">
-      <path d="M12 2a9.8 9.8 0 0 0-8.5 14.7L2 22l5.5-1.4A10 10 0 1 0 12 2zm0 17.7c-1.6 0-3.1-.4-4.4-1.3l-.3-.2-3.3.8.9-3.2-.2-.3A7.8 7.8 0 1 1 12 19.7zm4.3-5.8c-.2-.1-1.3-.7-1.5-.7-.2-.1-.4-.1-.5.1-.2.2-.6.7-.7.9-.1.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.5.8-1.3.1-.2 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 3.9 3.5 1.5.7 2.1.7 2.8.6.5-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.3-.1-.5-.2z"></path>
-    </svg>
-  </a>
+.btn.primary{
+  background:var(--gold);
+  color:#08070b;
+}
 
-</div>
-</html>
+.btn:hover{
+  background:var(--gold);
+  color:#08070b;
+}
+
+.hero-card{
+  border:1px solid rgba(215,180,90,.25);
+  background:#0d0b11;
+  padding:10px;
+}
+
+.hero-card img{
+  width:100%;
+  display:block;
+}
+
+/* SECTIONS */
+
+section{
+  padding:90px 0;
+}
+
+.about{
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.quote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:36px;
+  color:var(--gold-light);
+  border-left:2px solid var(--gold);
+  padding-left:30px;
+}
+
+/* SERVICES */
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:35px;
+}
+
+.service{
+  background:var(--card);
+  border:1px solid var(--line);
+  padding:28px;
+}
+
+.service:hover{
+  border-color:var(--gold);
+}
+
+.num{
+  color:var(--gold);
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+.service p{
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+  border-top:1px solid var(--line);
+}
+
+.portfolio-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+  margin-top:35px;
+}
+
+.portfolio-card{
+  display:block;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:var(--card);
+  transition:.3s;
+}
+
+.portfolio-card:hover{
+  transform:translateY(-5px);
+  border-color:var(--gold);
+}
+
+.portfolio-card img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  display:block;
+}
+
+/* CONTACT */
+
+.contact{
+  border-top:1px solid var(--line);
+  text-align:center;
+}
+
+.contact-box{
+  border:1px solid rgba(215,180,90,.25);
+  background:var(--card);
+  padding:45px;
+  margin-top:30px;
+}
+
+.contact-box p{
+  color:var(--muted);
+}
+
+.social-links{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:25px;
+}
+
+.social-links a{
+  border:1px solid rgba(215,180,90,.45);
+  padding:11px 16px;
+  color:var(--gold);
+  font-size:12px;
+  transition:.3s;
+}
+
+.social-links a:hover{
+  background:var(--gold);
+  color:#08070b;
+}
+
+/* FOOTER */
+
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 0;
+  text-align:center;
+  color:#77737c;
+  font-size:11px;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  .
